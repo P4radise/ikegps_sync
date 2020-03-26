@@ -26,7 +26,7 @@ class Integration():
         self.log('Starting integration')
         self.log('Starting integration',1)
         self.log('Starting integration',2)
-
+        raise SystemExit(0)
         try:
             self.ike_token = self.get_ike_token()
         except Exception as e:
