@@ -20,9 +20,12 @@ class Integration():
 
         self.headers = {'Content-type':'application/json','Content-Encoding':'utf-8'}
         self.log = onevizion.TraceMessage
+        onevizion.Config['Verbosity'] = 2
 
     def start_integration(self):
         self.log('Starting integration')
+        self.log('Starting integration',1)
+        self.log('Starting integration',2)
 
         try:
             self.ike_token = self.get_ike_token()
