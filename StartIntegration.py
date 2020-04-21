@@ -14,5 +14,5 @@ pass_ike = password_data["passIKE"]
 
 with open('ihub_process_id', "rb") as PFile:
     process_id = PFile.read().decode('utf-8')
-
+фывфывфывыф
 IKEIntegration.Integration(process_id=process_id, url_onevizion=url_onevizion, login_onevizion=login_onevizion, pass_onevizion=pass_onevizion, url_ike=url_ike, login_ike=login_ike, pass_ike=pass_ike)
